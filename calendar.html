@@ -9,29 +9,303 @@
   <title>Document</title>
 </head>
 
-<body class="bg-gray-50">
-  
-  <main>
+<body class="bg-gray-50 flex flex-col h-screen">
+
+  <header>
+    <h1 class="text-center font-bold pt-5 text-xl border-b border-gray-600">Calendar View</h1>
+  </header>
+
+  <main class="mb-auto overflow-x-auto">
 
     <!-- A table should be good to be used here, as a calendar displays tabular data -->
-    <table>
+    <table class="table-auto">
 
-      <thead>
-        <tr>
+      <thead class="sticky">
+        <tr class="border-b border-gray-200">
           <!-- empty - this will be the row for the times -->
-          <th></th>
-          <th>Sunday</th>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
+          <th class="sticky left-0 z-50 bg-gray-300 border-r border-gray-200 min-w-10"></th>
+          <th class="border-r border-gray-200 p-2 min-w-20">Sunday</th>
+          <th class="border-r border-gray-200 p-2 min-w-20">Monday</th>
+          <th class="border-r border-gray-200 p-2 min-w-20">Tuesday</th>
+          <th class="border-r border-gray-200 p-2 min-w-20">Wednesday</th>
+          <th class="border-r border-gray-200 p-2 min-w-20">Thursday</th>
+          <th class="border-r border-gray-200 p-2 min-w-20">Friday</th>
+          <th class="border-gray-200 p-2 min-w-20">Saturday</th>
         </tr>
       </thead>
 
-      <tbody>
+      <tbody class="overflow-y-scroll">
 
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">12 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">1 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">2 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">3 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">4 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">5 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">6 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">7 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">8 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200 min-w-20">
+            <Section class="bg-blue-200 rounded-lg p-3">
+                <h1>Class</h1>
+                <p class="text-xs">in person</p>
+            </Section>
+          </td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">9 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20">
+            <Section class="bg-blue-200 rounded-lg p-3">
+                <h1>Class</h1>
+                <p class="text-xs">in person</p>
+            </Section>
+          </td>
+          <td class=" border-r border-gray-200  min-w-20">
+            <Section class="bg-blue-200 rounded-lg p-3">
+                <h1>Class</h1>
+                <p class="text-xs">in person</p>
+            </Section>
+          </td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">10 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">11 am</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20">
+            <Section class="bg-blue-200 rounded-lg p-3">
+                <h1>Class</h1>
+                <p class="text-xs">in person</p>
+            </Section>
+          </td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">12 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">1 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">2 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20">
+            <Section class="bg-blue-200 rounded-lg p-3">
+                <h1>Class</h1>
+                <p class="text-xs">in person</p>
+            </Section>
+          </td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">3 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20">
+            <Section class="bg-blue-200 rounded-lg p-3">
+                <h1>Class</h1>
+                <p class="text-xs">in person</p>
+            </Section>
+          </td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">4 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">5 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">6 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">7 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">8 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">9 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">10 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
+        <tr class="border-b border-gray-200">
+          <td class="sticky left-0 z-50 bg-gray-300 text-xs border-r border-gray-200">11 pm</td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-r border-gray-200  min-w-20"></td>
+          <td class=" border-gray-200  min-w-20"></td>
+        </tr>
 
       </tbody>
      
@@ -41,7 +315,7 @@
 
 
   <!-- ALL ICONS TAKEN FROM: https://heroicons.com/ -->
-  <footer class="fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
+  <footer class="eft-0 z-50 w-screen h-16 bg-white border-t border-gray-200 dark:bg-gray-700 dark:border-gray-600">
     <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
             
       <!-- DASHBOARD PAGE LINK -->
@@ -107,25 +381,24 @@
       <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">History</span>
     </a>
     
-    <!-- PROFILE PAGE LINK -->
+    <!-- TIMER PAGE LINK -->
     <a
-      href="./profile.html"
+      href="./timer.html"
       class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group"
     >
-      <svg 
+      <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="currentColor"
         class="w-6 h-6 mb-1 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
       >
         <path
-        fill-rule="evenodd"
-        d="M18.685 19.097A9.723 9.723 0 0 0 21.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 0 0 3.065 7.097A9.716 9.716 0 0 0 12 21.75a9.716 9.716 0 0 0 6.685-2.653Zm-12.54-1.285A7.486 7.486 0 0 1 12 15a7.486 7.486 0 0 1 5.855 2.812A8.224 8.224 0 0 1 12 20.25a8.224 8.224 0 0 1-5.855-2.438ZM15.75 9a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
-        clip-rule="evenodd"
+          fill-rule="evenodd"
+          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6c0 .414.336.75.75.75h4.5a.75.75 0 0 0 0-1.5h-3.75V6Z"
+          clip-rule="evenodd"
         />
-      </svg>
-
-      <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Profile</span>
+      </svg>          
+      <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Timer</span>
     </a>
 
     </div>
